@@ -44,20 +44,6 @@ Please NOTE that the base uri is set to /DIGIFOOD/backend/ either in .htaccess (
 
 Available Resources:
   
-  GET   /test/DIGIFOOD/backend/menu/ - Fetch menu list.
+  GET   /DIGIFOOD/backend/menu/ - Fetch menu list.
   
-    - User comes from token to validate access to the platform
   
-
-
-NOTE: To add a new resource:
-
-  Insert in the table resources a new row
-  
-  - name. Name of the resource.
-  - method. Available method
-  - action. Action dispatched by this method
-  - format. Accepted format
-  - query_field. In case that you want to filter by any field.
-
-  Create a controller with the name of the resource. Or just add the required action to the Basecontroller.
