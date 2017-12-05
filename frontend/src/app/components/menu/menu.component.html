@@ -1,0 +1,9 @@
+
+<h1>Cart: {{cart}}</h1>
+<ul class="list-group"> <h4>Menu List</h4>
+	<li class="list-group-item" *ngFor="let menuItem of menu">
+		{{menuItem.name}} {{menuItem.price}}€ 
+		<button class="btn" (click)="increaseCart(menuItem)">+</button>
+		<button class="btn" (click)="decreaseCart(menuItem)">-</button>
+	</li>
+</ul>
